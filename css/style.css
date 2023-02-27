@@ -1,11 +1,12 @@
 /*Debug*/
-.debug .banner{
+.debug .banner,
+.debug .about{
     height: 15rem;
 }
 
 [class^="col-"]{
     border: 1px dashed red;
-    height: 10rem;
+    height: 5rem;
 }
 
 
@@ -32,14 +33,15 @@
 
 /*Main*/
 
-#app_main .banner{
+#app_main .banner,
+#app_main .about{
     background-color: var(--bg-primary);
 }
 
 
 /*Portfolio*/
 
-#app_main h3{
+#app_main .portfolio h3{
     color: var(--dark);
 }
 
