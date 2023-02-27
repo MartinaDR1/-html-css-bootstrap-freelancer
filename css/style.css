@@ -3,24 +3,66 @@
     height: 15rem;
 }
 
+[class^="col-"]{
+    border: 1px dashed red;
+    height: 10rem;
+}
 
 
 :root{
-    --bg-dark:#2c3e50;
+    --bg-darker:#2c3e50;
     --bg-primary:#1abc9c;
+    --dark:#333333;
 
+    --card-pink:#ba4b63;
+    --card-lightblue: #1ea4b6;
+    --card-dark:#140f0f;
+    --card-blue:#1c83c1;
+    --card-darkblue:#0e38b5;
+    --card-light:#ccb2a3;
 }
 
 
 /*Header*/
 
 #app_header{
-    background-color: var(--bg-dark);
+    background-color: var(--bg-darker);
 
 }
 
 /*Main*/
 
-#app-main section{
+#app_main .banner{
     background-color: var(--bg-primary);
+}
+
+
+/*Portfolio*/
+
+#app_main h3{
+    color: var(--dark);
+}
+
+#card-pink{
+    background-color: var(--card-pink);
+}
+
+#card-lightblue{
+    background-color: var(--card-lightblue);
+}
+
+#card-dark{
+    background-color: var(--card-dark);
+}
+
+#card-blue{
+    background-color: var(--card-blue);
+}
+
+#card-darkblue{
+    background-color: var(--card-darkblue);
+}
+
+#card-light{
+    background-color: var(--card-light);
 }
