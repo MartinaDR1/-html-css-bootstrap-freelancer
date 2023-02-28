@@ -91,6 +91,11 @@
     background-color: var(--card-light);
 }
 
+
+/*Contact*/
+.contact .btn{
+    background-color: var(--bg-primary);
+}
 /*Footer*/
 
 #app_footer .footer_top{
