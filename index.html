@@ -14,7 +14,7 @@
 
     <title>Bootstrap</title>
 </head>
-<body class="debug">
+<body>
     
     <header id="app_header">
         
@@ -26,13 +26,23 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse justify-content-lg-end ">
+                <div class="collapse navbar-collapse justify-content-lg-end "  id="navbarNavDropdown">
                     <ul class="navbar-nav">
                       <li class="nav-item px-2"><a class="text-decoration-none text-white " href="">portfolio</a></li>
                       <li class="nav-item px-2"><a class="text-decoration-none text-white " href="">about</a></li>
                       <li class="nav-item px-2"><a class="text-decoration-none text-white " href="">contact</a></li>
+                        
+                      <li class="nav-item dropdown">
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      
                     </ul>
                 </div>
+            
             </div>
           </nav>
     </header>
@@ -56,15 +66,30 @@
         </section>
 
         <section class="portfolio text-uppercase">
-            <div class="container py-3">
-                <h3 class="text-center py-2">Lorem</h3>
-                <div class="row py-3">
-                    <div id="card-pink" class="col-12 col-lg-6 col-xl-4 mb-2"></div>
-                    <div id="card-lightblue" class="col-12 col-lg-6 col-xl-4 mb-2"></div>
-                    <div id="card-dark" class="col-12 col-lg-6 col-xl-4 mb-2"></div>
-                    <div id="card-blue" class="col-12 col-lg-6 col-xl-4 mb-2"></div>
-                    <div id="card-darkblue" class="col-12 col-lg-6 col-xl-4 mb-2"></div>
-                    <div id="card-light" class="col-12 col-lg-6 col-xl-4 mb-2"></div>
+            <div class="container text-center py-3 ">
+                <h3 class="py-2">portfolio</h3>
+                <div class="star_dark pb-3 ">
+                    <i class="fa-solid fa-star align-bottom px-3"></i>
+                </div>
+                <div class="row row-cols-1  row-cols-md-2 row-cols-lg-3 g-3 ">
+                    <div id="card-pink" class="col rounded-2">
+                        <img class="mw-100" src="./img/cabin.png" alt="">
+                    </div>
+                    <div id="card-lightblue" class="col rounded-2">
+                        <img class="mw-100" src="./img/cake.png" alt="">
+                    </div>
+                    <div id="card-dark" class="col rounded-2">
+                        <img class="mw-100" src="./img/circus.png" alt="">
+                    </div>
+                    <div id="card-blue" class="col rounded-2">
+                        <img class="mw-100" src="./img/game.png" alt="">
+                    </div>
+                    <div id="card-darkblue" class="col rounded-2">
+                        <img class="mw-100" src="./img/safe.png" alt="">
+                    </div>
+                    <div id="card-light" class="col rounded-2">
+                        <img class="mw-100" src="./img/submarine.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>
