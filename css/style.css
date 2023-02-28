@@ -1,5 +1,5 @@
 /*Debug*/
-.debug .banner,
+
 .debug .about{
     height: 15rem;
 }
@@ -8,7 +8,6 @@
     border: 1px dashed red;
     height: 5rem;
 }
-
 
 :root{
     --bg-darker:#2c3e50;
@@ -26,7 +25,21 @@
     --bg-foot-bottom:#2c3e50;
 }
 
+.star::before{
+    content: "";
+    display: inline-block;
+    width: 120px;
+    height: 3px;
+    background-color: white;
+}
 
+.star::after{
+    content: "";
+    display: inline-block;
+    width: 120px;
+    height: 3px;
+    background-color: white;
+}
 /*Header*/
 
 #app_header{
