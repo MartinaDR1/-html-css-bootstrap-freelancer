@@ -3,48 +3,18 @@
     --bg-primary:#1abc9c;
     --dark:#333333;
 
-    --card-pink:#ba4b63;
-    --card-lightblue: #1ea4b6;
-    --card-dark:#140f0f;
-    --card-blue:#1c83c1;
-    --card-darkblue:#0e38b5;
-    --card-light:#ccb2a3;
-
     --bg-foot-top:#3a546d;
     --bg-foot-bottom:#2c3e50;
 }
 
-.star::before{
-    content: "";
-    display: inline-block;
-    width: 120px;
-    height: 3px;
-    background-color: white;
-}
-
+.star::before,
 .star::after{
     content: "";
     display: inline-block;
     width: 120px;
     height: 3px;
-    background-color: white;
 }
 
-.star_dark::before{
-    content: "";
-    display: inline-block;
-    width: 120px;
-    height: 3px;
-    background-color: var(--bg-darker);
-}
-
-.star_dark::after{
-    content: "";
-    display: inline-block;
-    width: 120px;
-    height: 3px;
-    background-color: var(--bg-darker);
-}
 
 /*Header*/
 
@@ -53,6 +23,7 @@
 
 }
 
+
 /*Main*/
 
 #app_main .banner,
@@ -60,42 +31,35 @@
     background-color: var(--bg-primary);
 }
 
+.banner .star::after,
+.banner .star::before{
+    background-color: white
+}
 
 /*Portfolio*/
 
-#app_main .portfolio h3{
-    color: var(--dark);
+.portfolio .star::after,
+.portfolio .star::before{
+    background-color: black;
 }
 
-#card-pink{
-    background-color: var(--card-pink);
-}
+/*About*/
 
-#card-lightblue{
-    background-color: var(--card-lightblue);
+.about .star::after,
+.about .star::before{
+    background-color: white
 }
-
-#card-dark{
-    background-color: var(--card-dark);
-}
-
-#card-blue{
-    background-color: var(--card-blue);
-}
-
-#card-darkblue{
-    background-color: var(--card-darkblue);
-}
-
-#card-light{
-    background-color: var(--card-light);
-}
-
 
 /*Contact*/
 .contact .btn{
     background-color: var(--bg-primary);
 }
+
+.contact .star::after,
+.contact .star::before{
+    background-color: black;
+}
+
 /*Footer*/
 
 #app_footer .footer_top{
